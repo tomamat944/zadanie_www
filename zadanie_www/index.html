@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    
+    <title>Zadanie</title>
+</head>
+<body>
+    <div class="popup">
+        <div class="inner">
+            <p class="alert">Wysłano formularz</p>
+            <button class="closebtn">Zamknij</button>
+        </div>
+    </div>
+    <div class="header">
+
+        <div class="inner">
+            <div class="mask_text">BLACK</div>
+            
+            <div class="under_elems">
+                <div class="visible_text">week</div>
+                <div class="rotated_text">tylko do </br>30.11.2022</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="left">
+            <p class="title">
+                <span class="first">Black Week</span>
+                <span class="second">tylko do 30.11.2022</span>
+            </p>
+            <hr class="uline"></hr>
+            <p class="descript">Spośród 479 lokali mieszkalnych wyróżniliśmy 120 mieszkań 
+                oraz 5 domów w promocyjnej cenie zlokalizowanych na 7 naszych inwestycjach: 
+                Katowice, Apatamenty Barbary, Katowice, ul. Asnyka. Katowice, ul. Kornasa, Chorzów, 
+                ul. 17-go sierpnia, Knurów Aleja Lipowa II, Chrzanów, ul. Śląska, Oświęcim, ul. Willowa.
+            </p>
+
+        </div>
+        <div class="right">
+            <form method="post" id="send">
+                <p class="title">
+                    Jesteś zainteresowany/na?</br>Skontaktuj się z nami.
+                </p>
+                <input type="text" class="padd" name="surname" id="surname" placeholder="Imię, nazwisko" required>
+                <input type="email" class="padd" name="email" id="email" placeholder="E-mail" required>
+                <input type="text" class="padd" name="phone" id="phone" placeholder="Telefon" required>
+                <input type="text" class="padd" name="cities" id="cities" placeholder="Miejscowość" required>
+                <div class="valid_text">
+                    <input type="checkbox" name="valid" id="valid" required>
+                    <label for="valid">* Wyrażam zgodę na przetwarzanie moich danych osobowych w celu przesyłania mi przez GRUPĘ DOMBUD 
+                    (współadministratorzy), informacji w celach nawiązania kontaktu i korespondencji, zgodnie z postanowieniami RODO. 
+                    Oświadczam, że zapoznałem/am się z Zasadami Przetwarzania Danych z dnia 25 maja 2018 r. dostępnymi na stronie 
+                    internetowej www.dombud.pl i akceptuję ich postanowienia. Pozostaję świadomy/a, że mogę w każdej chwili wycofać 
+                    udzieloną zgodę na przetwarzanie danych osobowych we wskazanym powyżej celu poprzez wysłanie maila w tym przedmiocie 
+                    na adres mailowy dombud@dombud.pl.
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="left"></div>
+        <input type="submit" value="Wyślij formularz" id="submitbtn" form="send" required>
+        <script src="scripts/form.js"></script>
+    </div>
+    <div class="news">
+        <div class="title">Aktualności</div>
+        <hr>
+        <div class="articles">
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non commodo risus. Proin vitae scelerisque purus, 
+                    in ornare eros. Fusce tincidunt, nisl et aliquam scelerisque, elit dolor hendrerit urna, finibus ultricies ex nulla 
+                    nec turpis. Ut sed ipsum sed sapien lobortis condimentum ut in metus. Ut bibendum risus tincidunt lacus eleifend varius.
+                     Ut scelerisque enim magna, at elementum dolor faucibus nec. Suspendisse sed lorem congue, consectetur velit nec,
+                      bibendum ex. Sed ornare et nisl non viverra. Etiam congue justo erat. Praesent posuere mattis imperdiet.
+                </li>
+                <li>Vestibulum et tellus in massa imperdiet convallis suscipit in lorem. Donec at iaculis leo. In hac habitasse platea 
+                    dictumst. Vivamus eget neque sed tortor egestas pellentesque vel et purus. Mauris eu velit varius, laoreet enim eu,
+                     vestibulum sapien. Sed et rutrum metus. Duis sit amet erat eu felis pellentesque cursus nec et magna. 
+                     Sed et tortor ac nisl mattis consequat.
+                </li>
+                <li>Aliquam ac neque magna. Vestibulum neque eros, vestibulum et diam eget, pellentesque pretium nisl. 
+                    Sed tincidunt sem at cursus porta. Etiam iaculis leo non libero euismod porttitor. Donec sit amet ipsum eleifend, 
+                    laoreet lacus sit amet, volutpat libero.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

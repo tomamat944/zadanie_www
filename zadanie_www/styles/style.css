@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.header{
+    font-family: 'poppins';
+    font-style: normal;
+    height: 30vw;
+    background: url(../images/buildings.png);
+    background-size: 100% 100%;
+}
+
+.header .inner{
+    display: flex;
+    flex-direction: column;
+    height: 30vw;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.mask_text{
+    display: flex;
+    justify-content: center;
+    font-size: 17vw;
+    background: url(../images/buildings.png);
+    background-repeat: no-repeat;
+    background-position-y: 125%;
+    background-position-x: 60%;
+    background-size: 65%, 65%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.under_elems{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    left: 21%;
+    top: -26%;
+}
+
+.visible_text{
+    font-size: 5vw;
+}
+
+.rotated_text{
+    padding: 5px;
+    border: solid 3px;
+    border-color: #c7bb95;
+    transform: rotate(8deg);
+    font-size: 1vw;
+    position: absolute;
+    top: 25%;
+    left: 20vw;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+
+.main .left .title{
+    display: flex;
+    flex-direction: column;
+}
+
+.main .left .title .first{
+    font-size: 2.5rem;
+    font-style: normal;
+}
+
+.main .left .title .second{
+    font-size: 1.5rem;
+    font-style: normal;
+}
+
+.main .left .uline{
+    width: 30px;
+    border-color:rgb(241, 219, 153);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main .right{
+    position: relative;
+    top: -1.5vw;
+    width: 50%;
+    background: linear-gradient(#c5af6e, #c7bd9c);
+}
+
+.main .right form{
+    display: flex;
+    flex-direction: column;
+}
+
+.right .title, .valid_text{
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.right .title{
+    padding-top: 5%;
+    padding-bottom: 5px;
+}
+
+
+.padd{
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: 1px, rgb(241, 219, 153);
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#valid{
+    margin-right:auto;
+    margin-bottom: auto;
+}
+
+.valid_text{
+    display: flex;
+    flex-direction: row;
+}
+
+.valid_text label{
+    font-family: 'poppins';
+    font-size: 8px;
+    font-weight: 100;
+    padding-left: 2%;
+    padding-bottom: 5px;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: -1.5vw;
+}
+
+#submitbtn{
+    height: 4vw;
+    width: 45%;
+    background: linear-gradient(to left, #c3a95c, #c7bd9c);
+    border-style: none;
+}
+
+.banner .left{
+    height: 4vw;
+    background: url(../images/kategoria_3.png);
+    background-position: 50%, 50%;
+    width: 45%;
+}
+
+.popup{
+    position: absolute;
+    display: none;
+    width: 25vw;
+    height: 10vw;
+    background: linear-gradient(to left, #c3a95c, #c7bd9c);
+    opacity: 0.95;
+    top: 25%;
+    left: 45%;
+    z-index: 9;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #c7bd9c;
+
+}
+
+.popup .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup .inner .alert{
+    font-size: 120%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.popup .inner .closebtn{
+    border: #c3a95c;
+    background: transparent;
+    margin-top: 15%;
+    margin-bottom: 3%;
+    font-size: 110%;
+}
+
+.popup .inner .closebtn:hover{
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: #bd961f;
+    border-radius: 5px;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vw;
+    padding: 0;
+}
+
+.news .title{
+    display: flex;
+    justify-content: center;
+}
+
+.news .articles{
+    font-size: 70%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.news hr{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.news .articles ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news .articles ul li{
+    width: 45%;
+    list-style: none;
+    padding: 1%;
+    border-bottom-style: solid;
+}
